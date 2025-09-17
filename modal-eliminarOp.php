@@ -1,0 +1,20 @@
+
+<div class="modal" id="modalAdvertencia<?php echo $row['nroOperacion']?>" tabindex="-1" style="font-size: 20px; font-family: Poppins;">
+    <div class="modal-dialog"   style="border: 3px; border-color:red">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        <div class="modal-body" style="font-size: 17px; font-family: Poppins; white-space: nowrap;">
+            <p>¿Está seguro que desea eliminar esta operación?</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="font-size: 14px; font-family: Poppins;">Cancelar</button>
+            <form action="eliminar-operacion.php" method="GET">
+                <input type="hidden" name="id" value="<?php echo $row['nroOperacion']; ?>">
+                <button type="submit" class="btn btn-primary" style="font-size: 14px; font-family: Poppins;">Confirmar</button>
+            </form>
+        </div>
+        </div>
+    </div>
+</div> 
