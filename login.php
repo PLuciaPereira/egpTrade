@@ -48,7 +48,7 @@ include("session_control.php");
                   </div>
 
                   <form action="validar.php" method="post" class="row g-3">
-                    <?php if (isset($_GET['error']) && $_GET['error'] == 1): ?>
+                   <?php if (isset($_GET['error']) && $_GET['error'] == 1): ?>
                       <div class="alert alert-danger alert-dismissible fade show" role="alert">
                         Usuario o contraseña incorrectos.
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>

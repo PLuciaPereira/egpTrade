@@ -1,0 +1,12 @@
+# Archivos de configuración local y credenciales
+config.local.php
+.env
+
+# Backups y volcados de base de datos
+*.sql
+*.bak
+
+# Archivos del sistema y logs
+*.log
+.DS_Store
+Thumbs.db
